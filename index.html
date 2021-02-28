@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0024)http://grafosm.surge.sh/ -->
-<html lang="pt_BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="pt_BR"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
-	<title></title>
+	<title>Mapa Comportamental</title>
 	<style>
 		canvas{
 			float: left;
@@ -34,6 +36,11 @@
 		   border-right: 1px solid #cccccc; 
 		   border-left: 2px solid #666666; 
 		} 
+		
+		.ajustarTh{
+		    margin-left: 15px;
+			display: block;
+		}
 	</style>
 <script type="text/javascript" src="chrome-extension://bgkhpibkldkmjjpikipeklkbdamlknnc/ouvira.js?host=economize.adrenaline.com.br"></script></head>
 <body>
@@ -100,11 +107,11 @@
 	  				<th>Motivação</th>
 	  			</tr>
 	  			<tr>
-	  				<td>Resiliente</td>
+	  				<td>Inspirador</td>
 	  				<td><input type="number" name="10" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
-	  				<td>Empático</td>
+	  				<td>Criativo</td>
 	  				<td><input type="number" name="11" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
@@ -112,22 +119,22 @@
 	  				<td><input type="number" name="12" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
-	  				<td>Criativo</td>
+	  				<td>Empático</td>
 	  				<td><input type="number" name="13" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
-	  				<td>Inspirador</td>
+	  				<td>Resiliente</td>
 	  				<td><input type="number" name="14" min="1" max="5" value="1"></td>
 	  			</tr>
-	  			<tr colspan="2">
+	  			<tr class="ajustarTh" colspan="2">
 	  				<th>Envolvimento</th>
 	  			</tr>
 	  			<tr>
-	  				<td>Comprometido</td>
+	  				<td>Eficaz</td>
 	  				<td><input type="number" name="15" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
-	  				<td>Determinado</td>
+	  				<td>Sensato</td>
 	  				<td><input type="number" name="16" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
@@ -135,11 +142,11 @@
 	  				<td><input type="number" name="17" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
-	  				<td>Sensato</td>
+	  				<td>Determinado</td>
 	  				<td><input type="number" name="18" min="1" max="5" value="1"></td>
 	  			</tr>
 	  			<tr>
-	  				<td>Eficaz</td>
+	  				<td>Comprometido</td>
 	  				<td><input type="number" name="19" min="1" max="5" value="1"></td>
 	  			</tr>
 	  		</tbody></table>
@@ -250,7 +257,7 @@
 			heightSubTitle = canvas.height * 0.9769230769230769;
 
 			cx.font = (0.03125 * canvas.width) + "px  Arial";
-			cx.fillText("Atuação",canvas.width * 0.82, heightTitle);
+			cx.fillText("Atuação",canvas.width * 0.87, heightTitle);
 			cx.font = (0.015 * canvas.width) + "px  Arial";
 			cx.fillText("",canvas.width * 0.88125, heightSubTitle);
 			
@@ -295,26 +302,26 @@
 
 			// Técnico 
 			cx.fillText("",canvas.width * 0.399375 ,canvas.height * 0.926923076923077);
-			cx.fillText("Resiliente",canvas.width * 0.394375 ,canvas.height * 0.95);
+			cx.fillText("Inspirador",canvas.width * 0.394375 ,canvas.height * 0.95);
 			cx.fillText("",canvas.width * 0.388125 ,canvas.height * 0.9730769230769231);
 
-			cx.fillText("Empático",canvas.width * 0.260625 ,canvas.height * 0.9153846153846154);
+			cx.fillText("Criativo",canvas.width * 0.260625 ,canvas.height * 0.9153846153846154);
 			cx.fillText("",canvas.width * 0.273125 ,canvas.height * 0.9384615384615385);
 			
 			cx.fillText("Comunicativo",canvas.width * 0.13125 ,canvas.height * 0.8153846153846154);
 			cx.fillText("",canvas.width * 0.14375 ,canvas.height * 0.8384615384615385);
 			
-			cx.fillText("Criativo",canvas.width * 0.1 ,canvas.height * 0.6923076923076923);
+			cx.fillText("Empático",canvas.width * 0.1 ,canvas.height * 0.6923076923076923);
 			cx.fillText("",canvas.width * 0.11875 ,canvas.height * 0.7153846153846154);
 			
-			cx.fillText("Inspirador",canvas.width * 0.08125 ,canvas.height * 0.5461538461538461);
+			cx.fillText("Resiliente",canvas.width * 0.08125 ,canvas.height * 0.5461538461538461);
 			cx.fillText("",canvas.width * 0.08125 ,canvas.height * 0.5692307692307692);
 
 			// Negócio 
-			cx.fillText("Comprometido",canvas.width * 0.03125 ,canvas.height * 0.43846153846153846);
+			cx.fillText("Eficaz",canvas.width * 0.073 ,canvas.height * 0.43846153846153846);
 			cx.fillText("",canvas.width * 0.0375 ,canvas.height * 0.46153846153846156);
 
-			cx.fillText("Determinado",canvas.width * 0.1 ,canvas.height * 0.2846153846153846);
+			cx.fillText("Sensato",canvas.width * 0.1 ,canvas.height * 0.2846153846153846);
 			cx.fillText("",canvas.width * 0.08125 ,canvas.height * 0.3076923076923077);
 			
 			//cx.fillText("Processo de",canvas.width * 0.14375 ,canvas.height * 0.16923076923076924);
@@ -324,11 +331,11 @@
 			
 			//cx.fillText("Entrega de",canvas.width * 0.26875 ,canvas.height * 0.08076923076923077);
 			//cx.fillText("valor",canvas.width * 0.29375 ,canvas.height * 0.10384615384615385);
-			cx.fillText("Sensato",canvas.width * 0.24875 ,canvas.height * 0.06076923076923077);
+			cx.fillText("Determinado",canvas.width * 0.24875 ,canvas.height * 0.06076923076923077);
 			cx.fillText("",canvas.width * 0.27375 ,canvas.height * 0.08384615384615385);
 
 
-			cx.fillText("Eficaz",canvas.width * 0.39125 ,canvas.height * 0.026923076923076925);
+			cx.fillText("Comprometido",canvas.width * 0.35 ,canvas.height * 0.026923076923076925);
 			cx.fillText("",canvas.width * 0.394375 ,canvas.height * 0.05);
 
 
@@ -348,7 +355,7 @@
 		document.getElementById('salvar').addEventListener('click', function(e){
 		    draw(canvasOut);
 		    this.href = imgData; // source
-		    this.download = 'agile-leader.png'; // nome da imagem
+		    this.download = 'Roda-Agil.png'; // nome da imagem
 		    return false;
 		});
 		
